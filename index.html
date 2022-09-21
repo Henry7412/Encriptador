@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Encriptador&reg;</title>
+    <link rel="icon" href="./Img/imgmenu/icono-removebg-preview.png">
+
+</head>
+<body>
+    <header class="encabezado">
+         <div class="logo"> <!--contenedor donde se encuentra el titulo y el logo de la pagina. -->
+            <img src="./Img/imgmenu/logo.png" alt="Logo de Alura" class="logoencabezado">
+            </div>
+            <div class="tituloencabezado">
+            <h1 class="h1titulo">Encriptador de mensajes</h1>
+       </div>
+
+    </header>
+    <main class="contenedot-ppal">
+        <section class="texto"> <!--contenedor en donde se ingresa el texto a encriptar, aqui se encuentra una area de texto dento de un div-->
+            <div class="contenedor-area-adv">
+                <div class="contenedor-texto">
+                    <textarea name="" class="textoencriptar" cols="120" rows="20" placeholder="Ingrese el texto..." autofocus></textarea>
+                </div>
+
+                <div class="advertencia"> <!--contenedor de los botones que dan la orden de encriptar/desencriptar-->
+                   
+                    <h5 class="h5-adv"> <img id="imagen-adv"src="./Img/imgmenu/Vectoralerta.png" alt="signo de exclamacion de advertencia"> Solo letras minusculas y sin acentos</h5>
+                </div>
+            </div>
+
+           
+            <div class="botones">
+               <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+               <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+              
+            </div>
+        </section>
+
+        <aside class="seccion-paneldcho"> <!--contenedor del panel derecho donde se muestra el mensaje encriptado-->
+           <div class="divpanelResultado">
+                <div class="contenedor-muneco">
+                    <img id="imagen-muneco"src="./Img/imgmenu/muñeco.png" alt="imagen de Persona mirando diamante con lupa">
+                </div>
+                <div class="contenedor-titulo-area"> <!--contenedor de titulo del texto de abajo de la imagen-->
+                    <h3 class="h3-areacifrado">Ningun mensaje fue encontrado</h3>
+                </div>    
+                <div class="contenedor-areatexto" >
+                    <p class="mensaje-encriptado">Ingrese el texto que desee encriptar/desencriptar
+                    </p>
+
+                </div>
+               
+
+            </div>
+
+            <div class="divResultado">
+                <div class="contenedor-resultado">
+                    <h3 class="h3-resultado">Resultado</h3>
+                    <textarea class="areaEncriptada" cols="20" rows="15" placeholder="Resultado de la encriptacion/desencriptacion" disabled></textarea>
+                </div>
+                <div class="contenedor-btncopiar2">
+                
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                </div> 
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+              <figure>
+                <a href="#"><img src="./Img/imgmenu/one.png"alt="Logo One"> </a>
+              </figure>
+          </div>
+          <div class="box">
+   
+             <p><small>&copy; 2022 <b>ALURA.</b> Página desarrollada por Henry Torres Villegas - 
+              Todos los Derechos Reservados.</small></p>
+              
+          </div>
+            <div class="box">
+              <h2>Redes Sociales</h2>
+ 
+                <div class="red-social">
+                  <a href="https://www.linkedin.com/in/henry-torres-1a0817184/" target="_blank" class="fa fa-linkedin"></a>
+                  <a href="https://github.com/Henry7412?tab=repositories" target="_blank" class="fa fa-github"></a>
+                 
+                </div>
+            </div>
+          </div>
+           
+    </footer>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script> 
+    
+</body>
+</html>
